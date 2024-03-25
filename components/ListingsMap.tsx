@@ -69,6 +69,8 @@ const ListingsMap = memo(({ listings }: Props) => {
         clusterTextColor={"#000"}
         clusterFontFamily={"mon-sb"}
         renderCluster={renderCluster}
+        minPoints={2}
+        radius={40}
       >
         {listings.features.map((item: any) => (
           <Marker
