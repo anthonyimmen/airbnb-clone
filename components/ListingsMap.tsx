@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { memo } from "react";
 import { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import { useRouter } from "expo-router";
 import MapView from "react-native-map-clustering";
@@ -18,7 +18,9 @@ const INITIAL_REGION = {
   longitudeDelta: 4,
 };
 
-const ListingsMap = ({ listings }: Props) => {
+// We memoize the whole component so that we do not need to re-render it, since
+// it is not changing much in our implementation
+const ListingsMap = memo(({ listings }: Props) => {
 
   const router = useRouter();
   
@@ -85,7 +87,7 @@ const ListingsMap = ({ listings }: Props) => {
       </MapView>
     </View>
   );
-};
+});
 
 export default ListingsMap;
 

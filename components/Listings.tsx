@@ -1,7 +1,6 @@
 import {
   View,
   Text,
-  FlatList,
   ListRenderItem,
   StyleSheet,
   TouchableOpacity,
@@ -12,19 +11,31 @@ import { defaultStyles } from "@/constants/Styles";
 import { Link } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import Animated, { FadeInRight, FadeOutLeft } from "react-native-reanimated";
+import { BottomSheetFlatList } from "@gorhom/bottom-sheet";
 
 interface Props {
   listings: any[];
   category: string;
+  refresh: number
 }
 
-const Listings = ({ listings: items, category }: Props) => {
+const Listings = ({ listings: items, category, refresh }: Props) => {
   const [loading, setLoading] = useState(false);
   const listRef = useRef<FlatList>(null);
 
+  // Update the view to scroll the list back top when clicking the Map button
   useEffect(() => {
-    // We want to reload the listings shown in this view each time a new category is selected
-    console.log("Reload Listings", items.length);
+    if (refresh) {
+      scrollListTop();
+    }
+  }, [refresh]);
+
+  const scrollListTop = () => {
+    listRef.current?.scrollToOffset({ offset: 0, animated: true });
+  };
+
+  // We want to reload the listings shown in this view each time a new category is selected
+  useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -58,10 +69,11 @@ const Listings = ({ listings: items, category }: Props) => {
 
   return (
     <View style={defaultStyles.container}>
-      <FlatList
+      <BottomSheetFlatList
         ref={listRef}
         data={loading ? [] : items}
         renderItem={renderRow}
+        ListHeaderComponent={<Text style={styles.listingLength}>{items.length} homes</Text>}
       />
     </View>
   );
@@ -69,9 +81,16 @@ const Listings = ({ listings: items, category }: Props) => {
 
 const styles = StyleSheet.create({
   listing: {
-    padding: 16,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
     gap: 8,
     marginVertical: 10
+  },
+  listingLength: {
+    fontFamily: 'mon-sb',
+    textAlign: 'center',
+    marginTop: 4,
+    fontSize: 16
   },
   image: {
     width: "100%",
