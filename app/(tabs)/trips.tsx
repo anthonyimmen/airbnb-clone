@@ -24,10 +24,15 @@ const Trips = () => {
 
       { isSignedIn ? 
         <View style={styles.container}>
-            <Text>
-
-            </Text>
-        </View> :
+        <View style={{gap: 8}}>
+          <Text style={{fontFamily: 'mon-sb', fontSize: 20}}>
+            No trips booked...yet!
+          </Text>
+          <Text style={{fontFamily: 'mon', fontSize: 15}}>
+            Time to dust off your bags and start planning your next adventure.
+          </Text>
+        </View>
+      </View>  :
         <View style={styles.container}>
           <View style={{gap: 8}}>
             <Text style={{fontFamily: 'mon-sb', fontSize: 20}}>

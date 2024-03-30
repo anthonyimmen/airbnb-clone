@@ -24,9 +24,14 @@ const Wishlists = () => {
 
       { isSignedIn ? 
         <View style={styles.container}>
-            <Text>
-
+          <View style={{gap: 8}}>
+            <Text style={{fontFamily: 'mon-sb', fontSize: 20}}>
+              Create your first wishlist
             </Text>
+            <Text style={{fontFamily: 'mon', fontSize: 15}}>
+              As you search, tap the heart icon to save your favorite places and Experiences to a wishlist.
+            </Text>
+          </View>
         </View> :
         <View style={styles.container}>
           <View style={{gap: 8}}>

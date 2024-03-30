@@ -24,10 +24,15 @@ const Inbox = () => {
 
       { isSignedIn ? 
         <View style={styles.container}>
-            <Text>
-
-            </Text>
-        </View> :
+        <View style={{gap: 8}}>
+          <Text style={{fontFamily: 'mon-sb', fontSize: 20}}>
+            No new messages
+          </Text>
+          <Text style={{fontFamily: 'mon', fontSize: 15}}>
+            When you contact a Host or send a reservation request, you'll see your messages here.
+          </Text>
+        </View>
+      </View> :
         <View style={styles.container}>
           <View style={{gap: 8}}>
             <Text style={{fontFamily: 'mon-sb', fontSize: 20}}>
