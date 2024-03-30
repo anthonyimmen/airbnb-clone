@@ -13,7 +13,7 @@ import { useAuth, useUser } from '@clerk/clerk-expo';
 import { defaultStyles } from '@/constants/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '@/constants/Colors';
-import { Link } from 'expo-router';
+import { Link, useNavigation } from 'expo-router';
 import * as ImagePicker from 'expo-image-picker';
 
 const Page = () => {
@@ -23,6 +23,11 @@ const Page = () => {
   const [lastName, setLastName] = useState(user?.lastName);
   const [email, setEmail] = useState(user?.emailAddresses[0].emailAddress);
   const [edit, setEdit] = useState(false);
+  const navigation = useNavigation();
+
+  const handlePress = () => {
+    navigation.navigate('(modals)/login');
+  };
 
   // Load user data on mount
   useEffect(() => {
@@ -117,9 +122,35 @@ const Page = () => {
 
       {isSignedIn && <Button title="Log Out" onPress={() => signOut()} color={Colors.dark} />}
       {!isSignedIn && (
-        <Link href={'/(modals)/login'} asChild>
-          <Button title="Log In" color={Colors.dark} />
-        </Link>
+        <View style={styles.container}>
+          <View style={{gap: 8, paddingBottom: 0, marginBottom: 0}}>
+            <Text style={{fontFamily: 'mon', fontSize: 16}}>
+              Log in to start planning your next trip.
+            </Text>
+          </View>
+          <View style={{gap: 18}}>
+            <TouchableOpacity 
+              style={[defaultStyles.btn]}
+              onPress={handlePress}
+            >
+              <Text style={[defaultStyles.btnText]}>
+                Log In
+              </Text>
+            </TouchableOpacity>
+            <View style={{paddingBottom: 0, marginBottom: 0, flexDirection: 'row', gap: 4}}>
+              <Text style={{fontFamily: 'mon', fontSize: 14}}>
+                Don't have an account?
+              </Text>
+              <TouchableOpacity 
+                onPress={handlePress}
+              >
+                <Text style={{textDecorationLine: 'underline', fontFamily: 'mon-sb'}}>
+                  Sign up
+                </Text>
+            </TouchableOpacity>
+            </View>
+          </View>
+      </View>
       )}
     </SafeAreaView>
   );
@@ -130,6 +161,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 32,
+    paddingBottom: 0
+  },
+  container: {
+    backgroundColor: '#fff',
+    paddingVertical: 0,
+    paddingHorizontal: 12,
+    marginHorizontal: 20,
+    marginTop: 20,
+    gap: 50,
+    textAlign: 'left',
+    marginBottom: 24,
   },
   header: {
     fontFamily: 'mon-sb',

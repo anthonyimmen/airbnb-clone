@@ -46,7 +46,6 @@ const Wishlists = () => {
               </Text>
             </TouchableOpacity>
         </View>
-      
       }
     </SafeAreaView>
   );
