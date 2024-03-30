@@ -129,11 +129,11 @@ const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 24,
+    padding: 32,
   },
   header: {
-    fontFamily: 'mon-b',
-    fontSize: 24,
+    fontFamily: 'mon-sb',
+    fontSize: 30,
   },
   card: {
     backgroundColor: '#fff',

@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   Image,
+  FlatList
 } from "react-native";
 import React, { useEffect, useRef, useState } from "react";
 import { defaultStyles } from "@/constants/Styles";
@@ -21,7 +22,7 @@ interface Props {
 
 const Listings = ({ listings: items, category, refresh }: Props) => {
   const [loading, setLoading] = useState(false);
-  const listRef = useRef<FlatList>(null);
+  const listRef = useRef<typeof BottomSheetFlatList>(null);
 
   // Update the view to scroll the list back top when clicking the Map button
   useEffect(() => {

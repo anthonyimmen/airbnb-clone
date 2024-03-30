@@ -16,15 +16,15 @@ export const defaultStyles = StyleSheet.create({
   },
   btn: {
     backgroundColor: Colors.primary,
-    height: 50,
+    height: 55,
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
   },
   btnText: {
     color: '#fff',
-    fontSize: 16,
-    fontFamily: 'mon-b',
+    fontSize: 18,
+    fontFamily: 'mon-sb',
   },
   btnIcon: {
     position: 'absolute',
