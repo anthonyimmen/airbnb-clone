@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#fff',
         height: 130,
-        borderColor: "#000",
+        borderColor: Colors.grey,
         borderBottomWidth: StyleSheet.hairlineWidth
     }, 
     actionRow: {
