@@ -17,7 +17,13 @@ Here are some of the key features implemented in this clone:
 * Property Details: Detailed view of properties including photos, descriptions, amenities, and booking options.
 
 # Screenshots
-Insert screenshots of the app here
+![alt text](/assets/screenshots/login.png)
+![alt text](/assets/screenshots/main.png)
+![alt text](/assets/screenshots/map.png)
+![alt text](/assets/screenshots/listing.png)
+![alt text](/assets/screenshots/stays.png)
+![alt text](/assets/screenshots/profile.png)
+
 
 ## Challenges Faced
 One of the main challenges was adapting the React knowledge I already possessed to the mobile development environment provided by React Native. This included understanding the different layout and styling principles in a mobile context and integrating mobile-specific libraries and APIs.
@@ -33,20 +39,19 @@ Going forward, I plan to implement more advanced features such as:
 ## How to Use
 To get a local copy up and running follow these simple steps:
 * Clone the repository
-* * git clone https://github.com/anthonyimmen/airbnb-clone.git
+##
+<tab><tab>code/git clone https://github.com/anthonyimmen/airbnb-clone.git
 * Install NPM packages
-* * npm install
+##
+<tab><tab>code/npm install
 * Start the application
-* * npm start
+##
+<tab><tab>code/npm start
 
 Feel free to fork the repository and submit pull requests with enhancements. I'm eager to see how this project can evolve with contributions from the developer community!
 
 #Acknowledgments
-* React Native documentation
-* * https://reactnative.dev/docs/getting-started
-* Expo documentation
-* * https://docs.expo.dev/
-* Simon Grimm's React Native Airbnb Clone
-* * https://www.youtube.com/watch?v=iWzUZiVoiR0&t=2755s
-* React Native Modern Datepicker
-* * https://hosseinshabani.github.io/react-native-modern-datepicker/
+* React Native documentation - https://reactnative.dev/docs/getting-started
+* Expo documentation - https://docs.expo.dev/
+* Simon Grimm's React Native Airbnb Clone - https://www.youtube.com/watch?v=iWzUZiVoiR0&t=2755s
+* React Native Modern Datepicker - https://hosseinshabani.github.io/react-native-modern-datepicker/
