@@ -12,8 +12,7 @@ The Airbnb Clone allows users to browse listings, filter search results, and vie
 
 # Features
 Here are some of the key features implemented in this clone:
-
-## User Authentication: Users can sign up, log in, and log out.
+* User Authentication: Users can sign up, log in, and log out.
 * Listing Browsing: Users can browse through various property listings.
 * Search and Filters: Enhanced search functionality to filter listings by type, price, and other parameters.
 * Property Details: Detailed view of properties including photos, descriptions, amenities, and booking options.
