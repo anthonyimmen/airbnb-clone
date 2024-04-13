@@ -17,13 +17,12 @@ Here are some of the key features implemented in this clone:
 * Property Details: Detailed view of properties including photos, descriptions, amenities, and booking options.
 
 # Screenshots
-![alt text](/assets/screenshots/login.png)
-![alt text](/assets/screenshots/main.png)
-![alt text](/assets/screenshots/map.png)
-![alt text](/assets/screenshots/listing.png)
-![alt text](/assets/screenshots/stays.png)
-![alt text](/assets/screenshots/profile.png)
-
+<img src="/assets/screenshots/login.png" width=100>
+<img src="/assets/screenshots/main.png" width=100>
+<img src="/assets/screenshots/map.png" width=100>
+<img src="/assets/screenshots/listing.png" width=100>
+<img src="/assets/screenshots/stays.png" width=100>
+<img src="/assets/screenshots/profile.png" width=100>
 
 ## Challenges Faced
 One of the main challenges was adapting the React knowledge I already possessed to the mobile development environment provided by React Native. This included understanding the different layout and styling principles in a mobile context and integrating mobile-specific libraries and APIs.
