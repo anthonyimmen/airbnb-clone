@@ -13,7 +13,6 @@ The Airbnb Clone allows users to browse listings, view listings through the map,
 Here are some of the key features implemented in this clone:
 * User Authentication: Users can sign up, log in, and log out.
 * Listing Browsing: Users can browse through various property listings.
-* Search and Filters: Enhanced search functionality to filter listings by type, price, and other parameters.
 * Property Details: Detailed view of properties including photos, descriptions, amenities, and booking options.
 
 # Screenshots
@@ -32,13 +31,15 @@ Going forward, I plan to implement more advanced features such as:
 
 ## How to Use
 To get a local copy up and running follow these simple steps:
-* Clone the repository -```git clone https://github.com/anthonyimmen/airbnb-clone.git```
+* Clone the repository - ```git clone https://github.com/anthonyimmen/airbnb-clone.git```
 * Install NPM packages - ```npm install```
-* Start the application - ```npm start```
+* Start the application - ```npx expo start -c```
 
-Feel free to fork the repository and submit pull requests with enhancements. I'm eager to see how this project can evolve with contributions from the developer community!
+**Note** - In order to get the application fully working, please add a .env file into the root of the project that contains your EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY. For security purposes, I did not include my own. By following Simon Grimm's React Native video (see acknowledgements) or following Expo's documentation (also see acknowledgements), you will be able to create that key and then be able to successfully run the application.
 
-#Acknowledgments
+Lastly, feel free to fork the repository and submit pull requests with enhancements. I'm eager to see how this project can evolve with contributions from the developer community!
+
+# Acknowledgments
 * React Native documentation - https://reactnative.dev/docs/getting-started
 * Expo documentation - https://docs.expo.dev/
 * Simon Grimm's React Native Airbnb Clone - https://www.youtube.com/watch?v=iWzUZiVoiR0&t=2755s
