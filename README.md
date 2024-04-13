@@ -11,7 +11,7 @@ The Airbnb Clone allows users to browse listings, view listings through the map,
 
 # Features
 Here are some of the key features implemented in this clone:
-* User Authentication: Users can sign up, log in, and log out.
+* User Authentication: Users can sign up, log in, and log out using Apple Auth and Google Auth.
 * Listing Browsing: Users can browse through various property listings.
 * Property Details: Detailed view of properties including photos, descriptions, amenities, and booking options.
 
