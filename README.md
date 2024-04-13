@@ -24,23 +24,20 @@ One of the main challenges was adapting the React knowledge I already possessed 
 
 ## Future Improvements
 Going forward, I plan to implement more advanced features such as:
-* Map Selection: Ability to select a listing from the Map View
-* Search functionality: Being able to search for a specific listing from all listings
-* Listing Filtering: Allowing users to filter the listing by using the filter button or the filter tabs
-* User Reviews: Allowing users to post reviews on properties they have stayed in.
-* Payment Integration: Implementing a secure payment system for booking properties.
+* **Map Selection**: Ability to select a listing from the Map View
+* **Search functionality**: Being able to search for a specific listing from all listings
+* **Listing Filtering**: Allowing users to filter the listing by using the filter button or the filter tabs
+* **User Reviews**: Allowing users to post reviews on properties they have stayed in.
+* **Payment Integration**: Implementing a secure payment system for booking properties.
 
 ## How to Use
 To get a local copy up and running follow these simple steps:
 * Clone the repository
-##
-<tab><tab>code/git clone https://github.com/anthonyimmen/airbnb-clone.git
+```git clone https://github.com/anthonyimmen/airbnb-clone.git```
 * Install NPM packages
-##
-<tab><tab>code/npm install
+```npm install```
 * Start the application
-##
-<tab><tab>code/npm start
+```npm start```
 
 Feel free to fork the repository and submit pull requests with enhancements. I'm eager to see how this project can evolve with contributions from the developer community!
 
