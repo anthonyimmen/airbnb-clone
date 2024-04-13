@@ -32,12 +32,9 @@ Going forward, I plan to implement more advanced features such as:
 
 ## How to Use
 To get a local copy up and running follow these simple steps:
-* Clone the repository
-```git clone https://github.com/anthonyimmen/airbnb-clone.git```
-* Install NPM packages
-```npm install```
-* Start the application
-```npm start```
+* Clone the repository -```git clone https://github.com/anthonyimmen/airbnb-clone.git```
+* Install NPM packages - ```npm install```
+* Start the application - ```npm start```
 
 Feel free to fork the repository and submit pull requests with enhancements. I'm eager to see how this project can evolve with contributions from the developer community!
 
