@@ -2,13 +2,12 @@
 Welcome to the GitHub repository of my Airbnb Clone Project! This project is a React Native application designed to simulate the core features of the popular accommodation booking platform, Airbnb. As a developer already experienced in React, I embarked on this project to deepen my understanding of React Native and to explore its capabilities in building cross-platform mobile applications.
 
 ## Project Overview
-The Airbnb Clone allows users to browse listings, filter search results, and view detailed pages for each property. Users can also book accommodations directly through the app. This project aims to provide a seamless user experience similar to the original Airbnb app, with a focus on clean design and smooth navigation.
+The Airbnb Clone allows users to browse listings, view listings through the map, view detailed pages for each property, and user authorization. This project aims to provide a seamless user experience similar to the original Airbnb app, with a focus on clean design and smooth navigation.
 
 ## Technologies Used
 * React Native: Used for building the main application framework and UI components.
-* Redux: Manages the state of the app across different components.
-* React Navigation: Handles navigation between the different screens of the app.
-* Firebase: Used for authentication, database management, and hosting.
+* Expo Navigation: Handles navigation between the different screens of the app.
+* Clerk: Used for authentication and profile information
 
 # Features
 Here are some of the key features implemented in this clone:
@@ -25,22 +24,29 @@ One of the main challenges was adapting the React knowledge I already possessed 
 
 ## Future Improvements
 Going forward, I plan to implement more advanced features such as:
-* Interactive Maps: Integrating maps that allow users to search for properties based on location.
+* Map Selection: Ability to select a listing from the Map View
+* Search functionality: Being able to search for a specific listing from all listings
+* Listing Filtering: Allowing users to filter the listing by using the filter button or the filter tabs
 * User Reviews: Allowing users to post reviews on properties they have stayed in.
 * Payment Integration: Implementing a secure payment system for booking properties.
 
 ## How to Use
 To get a local copy up and running follow these simple steps:
 * Clone the repository
-** git clone https://github.com/yourusername/airbnb-clone-react-native.git
+* * git clone https://github.com/anthonyimmen/airbnb-clone.git
 * Install NPM packages
-** npm install
+* * npm install
 * Start the application
-** npm start
+* * npm start
 
 Feel free to fork the repository and submit pull requests with enhancements. I'm eager to see how this project can evolve with contributions from the developer community!
 
 #Acknowledgments
-*React Native documentation
-*Firebase documentation
-*And all other libraries and frameworks used in this project.
+* React Native documentation
+* * https://reactnative.dev/docs/getting-started
+* Expo documentation
+* * https://docs.expo.dev/
+* Simon Grimm's React Native Airbnb Clone
+* * https://www.youtube.com/watch?v=iWzUZiVoiR0&t=2755s
+* React Native Modern Datepicker
+* * https://hosseinshabani.github.io/react-native-modern-datepicker/
